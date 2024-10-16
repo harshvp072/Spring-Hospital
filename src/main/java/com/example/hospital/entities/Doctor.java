@@ -1,7 +1,6 @@
 package com.example.hospital.entities;
 
 import lombok.Data;
-
 import java.util.List;
 
 @Data
