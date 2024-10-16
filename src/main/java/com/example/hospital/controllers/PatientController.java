@@ -15,6 +15,7 @@ public class PatientController {
     @Autowired
     private PatientService patientService;
 
+//  Read
     @GetMapping("/all")
     public List<Patient> getAllPatient(){
         return patientService.getAllPatient();
@@ -25,21 +26,22 @@ public class PatientController {
         return patientService.getPattientById(id);
     }
 
+//  Create
     @PostMapping("")
     public Patient addPatient(@RequestBody Patient patient){
         return patientService.addPatient(patient);
     }
 
+//  Update
     @PatchMapping("")
     public Patient updatedPatient(@RequestBody Patient patient){
         return patientService.updatedPatient(patient);
     }
 
+//    Delete
     @DeleteMapping("/{id}")
     public Patient deletePatient(@PathVariable int id){
         return patientService.deletePatient(id);
     }
-
-
 
 }

@@ -8,5 +8,6 @@ public class Patient {
     private String name;
     private String disease;
     private int age;
+    private int doctorId;   //to store patient in doctor( which patient was treated by which doctor )
 
 }
